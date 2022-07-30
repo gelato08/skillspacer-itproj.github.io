@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Application </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+ 	<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+</head>
+<body>
+
+<br>
+<br>
+<br>
+
+<nav class = "navbar navbar-default navbar-fixed-top">
+  <div class = "container-fluid">
+    <div class = "navbar-header">
+      <a class = "navbar-brand"> Skill Spacer </a>
+    </div>
+    <ul class = "nav navbar-nav">
+      <li class = "active"><a href = "index.html"> Home </a></li>
+      <li class = "dropdown"> <a class = "dropdown-toggle" data-toggle = "dropdown"> Categories <span class = "caret"> </span> </a>
+        <ul class="dropdown-menu">
+          <li> <a href = "photography.html"> Photography </a> </li>
+              <li> <a href = "painting.html"> Painting </a> </li>
+              <li> <a href = "music.html"> Musical Instruments </a> </li>
+              <li> <a href = "singing.html"> Singing </a> </li>
+              <li> <a href = "sculpture.html"> Sculpture </a> </li>
+              <li> <a href = "animation.html"> Animation </a> </li>
+              <li> <a href = "programming.html"> Programming </a> </li>
+              <li> <a href = "digiarts.html"> Digital Arts </a> </li>
+        </ul>
+      </li>
+      <li> <a href = "about.html"> About </a> </li>
+      <li> <a href = "apply.html"> Apply Now </a> </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container1" id = "form">
+  <h1 id = "head"> Application Form </h1>
+  <form method="post" action="mailto:amcaraan28@gmail.com" autocomplete="on">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="ex. Juan.." required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Middle Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="middlename" placeholder="ex. Dela Cruz..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="ex. Luna.." required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Gender</label>
+    </div>
+    <div class="col-75">
+      <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      </div>
+  </div>
+   <div class="row">
+    <div class="col-25">
+      <label for="lname">Birthday</label>
+    </div>
+    <div class="col-75">
+      <input type="date" id="bday" name="bday" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country" required>
+        <option value="australia">Australia</option>
+        <option value="china">China</option>
+        <option value="japan">Japan</option>
+        <option value="southkorea">South Korea</option>
+        <option value="indonesia">Indonesia</option>
+        <option value="thailand">Thailand</option>
+        <option value="singapore">Singapore</option>
+        <option value="malaysia">Malaysia</option>
+        <option value="philippines">Philippines</option>
+        <option value="vietnam">Vietnam</option>
+        <option value="brunei">Brunei</option>
+        <option value="cambodia">Cambodia</option>
+        <option value="myanmar">Myanmar</option>
+        <option value="laos">Laos</option>
+      </select>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Contact Number</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="contact" name="cnumber" placeholder="09..." required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="categories">Lesson for</label>
+    </div>
+    <div class="col-75">
+      <select id="category" name="category" required>
+        <option value="photography">Photography</option>
+        <option value="painting">Painting</option>
+        <option value="musical">Musical Instruments</option>
+        <option value="singing">Singing</option>
+        <option value="sculpture">Sculpture</option>
+        <option value="animation">Animation</option>
+        <option value="programming">Programming</option>
+        <option value="digiarts">Digital Arts</option>
+      </select>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Preferred date to start</label>
+    </div>
+    <div class="col-75">
+      <input type="date" id="start" name="start" required>
+    </div>
+  </div>
+
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit"  data-toggle="modal" data-target="#myModal">    
+    </div>
+  </form>
+</div>
+
+
+
+
+<footer class="site-footer">
+ 	<hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>Contact Us</h6>
+            <p class="text-justify"> Email: skillspacer@gmail.com <br>
+            							or amcaraan28@gmail.com <br>
+            						Phone number: +6394539834978 <br>
+                                    	or +639951473198 <br>
+            						Facebook: Skill Spacer <br>
+                                     </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="photography.html"> Photography </a></li>
+              <li><a href="painting.html"> Painting </a></li>
+              <li><a href="music.html"> Musical Instruments </a></li>
+              <li><a href="singing.html"> Singing </a></li>
+              <li><a href="sculpture.html"> Sculpture </a></li>
+              <li><a href="animation.html"> Animation </a></li>
+              <li><a href="programming.html"> Programming </a></li>
+              <li><a href="digiarts.html"> Digital Arts </a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="about.html"> About </a></li>
+              <li><a href="apply.html"> Apply Now </a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <hr>
+        
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by Scanfcode. </p>
+          </div>
+        </div>
+      </div>
+</footer>
+
+
+</body>
+</html>
+
+<style> 
+
+	* {
+		
+  		box-sizing: border-box;		
+	}
+	
+	#head { 
+	
+		text-align: center;
+		font-size: 50px;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		padding: 30px;
+		color: white;
+  		text-shadow: 2px 2px 4px #000000;
+	
+	}
+
+	input[type=text], select, textarea, #bday, #start {
+		
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  resize: vertical;
+		  
+	}
+	
+	label {
+		
+		  padding: 12px 12px 12px 0;
+		  margin-left: 20px;
+	  
+	}
+	
+	input[type=submit] {
+		
+		  background-color:  #cc66ff;
+		  color: white;
+		  padding: 12px 20px;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		  float: right;
+		  
+	}
+	
+	input[type=submit]:hover {
+		
+	  	background-color:  #8800cc;
+	  
+	}
+	
+	.container1 {
+		
+		border-radius: 10px;
+		background-color: #f7e6ff;
+		padding: 20px;
+		margin-left: 20px;
+		margin-right: 20px;		  
+	
+	}
+	
+	.col-25 {
+		
+		  float: left;
+		  width: 25%;
+		  margin-top: 6px;
+		  
+	}
+	
+	.col-75 {
+		
+		  float: left;
+		  width: 75%;
+		  margin-top: 6px;
+	  
+	}
+	
+	.row:after {
+		
+		  content: "";
+		  display: table;
+		  clear: both;
+	  
+	}
+	
+	@media screen and (max-width: 600px) {
+		
+	  .col-25, .col-75, input[type=submit] {
+		  
+			width: 100%;
+			margin-top: 0;
+			
+	  }
+	  
+	}
+
+	.site-footer {
+		
+		  background-color: white;
+		  padding:45px 0 20px;
+		  font-size:15px;
+		  line-height:24px;
+		  color:#737373;
+		  
+	}
+	
+	.site-footer hr {
+		
+	  	border-top-color:#bbb;
+	  	opacity:0.5;
+	
+	}
+	
+	.site-footer hr.small {
+
+		 margin:20px 0;
+	
+	}
+	
+	.site-footer h6 {
+		
+	  	color: black;
+	  	font-size:16px;
+	  	text-transform:uppercase;
+	  	margin-top:5px;
+	  	letter-spacing:2px
+	
+	}
+	
+	.site-footer a {
+		
+	  	color:#737373;
+	
+	}
+	
+	.site-footer a:hover {
+
+	  	color:#3366cc;
+	  	text-decoration:none;
+	
+	}
+	
+	.footer-links {
+		
+	  	padding-left:0;
+	  	list-style:none;
+	
+	}
+	
+	.footer-links li {
+	  
+	  	display:block;
+		
+	}
+	
+	.footer-links a {
+		
+	  	color:#737373;
+		
+	}
+	
+	.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+		
+	  	color:#3366cc;
+	  	text-decoration:none;
+		
+	}
+	
+	.footer-links.inline li {
+		
+	  	display:inline-block;
+		
+	}
+	
+	.site-footer .social-icons {
+		
+	  	text-align:right;
+		
+	}
+	
+	.site-footer .social-icons a {
+		
+		  width:40px;
+		  height:40px;
+		  line-height:40px;
+		  margin-left:6px;
+		  margin-right:0;
+		  border-radius:100%;
+		  background-color:#33353d;
+	}
+	
+	.copyright-text {
+		
+	  	margin:0;
+	
+	}
+	
+	@media (max-width:991px) {
+		
+	  	.site-footer [class^=col-]
+	  
+	 	{
+		
+			margin-bottom:30px;
+	  
+	 	}
+		
+	}
+	
+	@media (max-width:767px) {
+		
+	  .site-footer {
+		  
+			padding-bottom:0;
+	  
+	  }
+	  
+	  .site-footer .copyright-text,.site-footer .social-icons {
+		  
+			text-align:center;
+	  
+	  }
+	
+	}
+	
+	@media (max-width:767px) {
+		
+	  .social-icons li.title {
+		  
+			display:block;
+			margin-right:0;
+			font-weight:600
+	  
+	  }
+	
+	}
+
+</style>
